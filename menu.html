@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu | BOK Coffee &amp; Eatery Manado</title>
+  <link rel="icon" href="img/logo.jpg">
+  <meta name="description" content="BOK Coffee & Eatery, kedai kopi dan tempat nongkrong di Jln. Ring Road GPI, Manado.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html"><img src="img/logo.jpg" alt="Logo BOK Coffee &amp; Eatery" class="logo"> BOK <small>Coffee &amp; Eatery</small></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Buka menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link active" href="menu.html" aria-current="page">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-head">
+    <div class="container">
+      <p class="label mb-2">Menu</p>
+      <h1>Menu kami</h1>
+      <p class="mb-0">Pilihan kopi, minuman segar, dan makanan di BOK. Untuk harga dan menu lainnya, tanya langsung di kasir atau lewat DM Instagram kami.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <img class="photo photo-wide mb-5" src="img/lineup.jpg" alt="Deretan minuman BOK: Coffee Pandan Latte, Choco Banana, Coffee Butterscotch, Americano, Vanilla Sweet Cream">
+      <div class="d-flex flex-wrap gap-2 mb-4">
+        <button class="filter-btn active" data-filter="semua">Semua</button>
+        <button class="filter-btn" data-filter="kopi">Kopi</button>
+        <button class="filter-btn" data-filter="nonkopi">Non-Kopi</button>
+        <button class="filter-btn" data-filter="makanan">Makanan</button>
+      </div>
+      <div class="row g-4">
+        <div class="col-6 col-lg-3 menu-card" data-kategori="kopi">
+          <div class="card-menu">
+            <img src="img/menu-bok-coffee.jpg" alt="BOK Coffee" loading="lazy">
+            <div class="p-3">
+              <h3>BOK Coffee <span class="badge-fav">Favorit</span></h3>
+              <p>Rasa kopi yang creamy dan nutty.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 menu-card" data-kategori="kopi">
+          <div class="card-menu">
+            <img src="img/menu-pandan-latte.jpg" alt="Coffee Pandan Latte" loading="lazy">
+            <div class="p-3">
+              <h3>Coffee Pandan Latte <span class="badge-fav">Favorit</span></h3>
+              <p>Rasa kopi yang manis, creamy, dan wangi.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 menu-card" data-kategori="kopi">
+          <div class="card-menu">
+            <img src="img/menu-vanilla-sweet-cream.jpg" alt="Vanilla Sweet Cream" loading="lazy">
+            <div class="p-3">
+              <h3>Vanilla Sweet Cream <span class="badge-fav">Favorit</span></h3>
+              <p>Rasa kopi yang sweet dan creamy.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 menu-card" data-kategori="kopi">
+          <div class="card-menu">
+            <img src="img/menu-butterscotch.jpg" alt="Coffee Butterscotch" loading="lazy">
+            <div class="p-3">
+              <h3>Coffee Butterscotch <span class="badge-fav">Favorit</span></h3>
+              <p>Rasa kopi yang manis, creamy, dan gurih.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 menu-card" data-kategori="kopi">
+          <div class="card-menu">
+            <img src="img/arabica.jpg" alt="Americano" loading="lazy">
+            <div class="p-3">
+              <h3>Americano </h3>
+              <p>Diracik sepenuhnya menggunakan 100% Arabica.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 menu-card" data-kategori="nonkopi">
+          <div class="card-menu">
+            <img src="img/menu-strawberry-mojito.jpg" alt="Strawberry Mojito" loading="lazy">
+            <div class="p-3">
+              <h3>Strawberry Mojito <span class="badge-fav">Favorit</span></h3>
+              <p>Rasa strawberry yang segar dan asam dengan sensasi mint yang menyejukkan.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 menu-card" data-kategori="nonkopi">
+          <div class="card-menu">
+            <img src="img/menu-lychee-mojito.jpg" alt="Lychee Mojito" loading="lazy">
+            <div class="p-3">
+              <h3>Lychee Mojito <span class="badge-fav">Favorit</span></h3>
+              <p>Rasa lychee yang segar dan harum dengan sensasi mint yang menyejukkan.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 menu-card" data-kategori="nonkopi">
+          <div class="card-menu">
+            <img src="img/menu-choco-banana.jpg" alt="Choco Banana" loading="lazy">
+            <div class="p-3">
+              <h3>Choco Banana <span class="badge-fav">Favorit</span></h3>
+              <p>Rasa chocolate yang manis, creamy, dan wangi dari pisang.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 menu-card" data-kategori="nonkopi">
+          <div class="card-menu">
+            <img src="img/menu-matcha-latte.jpg" alt="Matcha Latte" loading="lazy">
+            <div class="p-3">
+              <h3>Matcha Latte </h3>
+              <p>Matcha hangat dengan latte art.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 menu-card" data-kategori="makanan">
+          <div class="card-menu">
+            <img src="img/menu-roti-bakar.jpg" alt="Roti Bakar Cokelat Keju" loading="lazy">
+            <div class="p-3">
+              <h3>Roti Bakar Cokelat Keju </h3>
+              <p>Roti bakar dengan cokelat dan parutan keju.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 menu-card" data-kategori="makanan">
+          <div class="card-menu">
+            <img src="img/menu-pisang-goreng.jpg" alt="Pisang Goreng" loading="lazy">
+            <div class="p-3">
+              <h3>Pisang Goreng </h3>
+              <p>Pisang goreng renyah, pas ditemani secangkir latte.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="text-soft small mt-5 mb-0">Menu bisa berubah sewaktu-waktu. Info terbaru ada di <a href="https://www.instagram.com/bokcoffee.n.eatery/" target="_blank" rel="noopener">Instagram @bokcoffee.n.eatery</a>.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-5">
+          <h5 class="serif text-white d-flex align-items-center gap-2"><img src="img/logo.jpg" alt="Logo BOK" class="logo"> BOK Coffee &amp; Eatery</h5>
+          <p class="mb-0">Kopi, minuman segar, dan camilan. Tempat nongkrong santai di Manado.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <p class="text-white mb-2">Jam buka</p>
+          <p class="mb-0">Senin &ndash; Sabtu 10.00&ndash;22.00<br>Minggu 15.00&ndash;22.00</p>
+        </div>
+        <div class="col-6 col-md-4">
+          <p class="text-white mb-2">Ikuti kami</p>
+          <p class="mb-0"><a href="https://www.instagram.com/bokcoffee.n.eatery/" target="_blank" rel="noopener">Instagram @bokcoffee.n.eatery</a><br>Jln. Ring Road GPI, Manado</p>
+        </div>
+      </div>
+      <hr>
+      <p class="mb-0 small">&copy; <span class="tahun">2026</span> BOK Coffee &amp; Eatery. Foto dari Instagram @bokcoffee.n.eatery.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontak | BOK Coffee &amp; Eatery Manado</title>
+  <link rel="icon" href="img/logo.jpg">
+  <meta name="description" content="BOK Coffee & Eatery, kedai kopi dan tempat nongkrong di Jln. Ring Road GPI, Manado.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html"><img src="img/logo.jpg" alt="Logo BOK Coffee &amp; Eatery" class="logo"> BOK <small>Coffee &amp; Eatery</small></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Buka menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link active" href="kontak.html" aria-current="page">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-head">
+    <div class="container">
+      <p class="label mb-2">Kontak</p>
+      <h1>Mampir atau kirim pesan</h1>
+      <p class="mb-0">Mau reservasi meja untuk acara kecil, tanya menu, atau kasih masukan? Isi form di bawah.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="row g-4 g-lg-5">
+        <div class="col-lg-5">
+          <h2 class="h4">Alamat</h2>
+          <p class="text-soft">Jln. Ring Road GPI<br>Manado, Sulawesi Utara</p>
+
+          <h2 class="h4 mt-4">Jam buka</h2>
+          <p id="status-buka" class="small">Memuat status...</p>
+          <table class="w-100 hours text-soft">
+              <tr data-day="1"><td>Senin</td><td>10.00 &ndash; 22.00</td></tr>
+              <tr data-day="2"><td>Selasa</td><td>10.00 &ndash; 22.00</td></tr>
+              <tr data-day="3"><td>Rabu</td><td>10.00 &ndash; 22.00</td></tr>
+              <tr data-day="4"><td>Kamis</td><td>10.00 &ndash; 22.00</td></tr>
+              <tr data-day="5"><td>Jumat</td><td>10.00 &ndash; 22.00</td></tr>
+              <tr data-day="6"><td>Sabtu</td><td>10.00 &ndash; 22.00</td></tr>
+              <tr data-day="0"><td>Minggu</td><td>15.00 &ndash; 22.00</td></tr>
+          </table>
+
+          <h2 class="h4 mt-4">Media sosial</h2>
+          <p><a href="https://www.instagram.com/bokcoffee.n.eatery/" target="_blank" rel="noopener">Instagram @bokcoffee.n.eatery</a></p>
+        </div>
+
+        <div class="col-lg-7">
+          <form id="form-kontak" class="simple-card" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="nama" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="nama" name="nama" required>
+                <div class="invalid-feedback">Nama wajib diisi.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="hp" class="form-label">No. HP / WhatsApp</label>
+                <input type="tel" class="form-control" id="hp" name="hp" pattern="[0-9+ ]{9,15}" required>
+                <div class="invalid-feedback">Masukkan nomor yang valid.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="keperluan" class="form-label">Keperluan</label>
+                <select class="form-select" id="keperluan" name="keperluan" required>
+                  <option value="">Pilih...</option>
+                  <option>Reservasi meja</option>
+                  <option>Pertanyaan menu</option>
+                  <option>Kritik &amp; saran</option>
+                  <option>Lainnya</option>
+                </select>
+                <div class="invalid-feedback">Pilih salah satu.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="tanggal" class="form-label">Tanggal (jika reservasi)</label>
+                <input type="date" class="form-control" id="tanggal" name="tanggal">
+              </div>
+              <div class="col-12">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" id="pesan" name="pesan" rows="4" required></textarea>
+                <div class="invalid-feedback">Pesan tidak boleh kosong.</div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-bok">Kirim</button>
+              </div>
+            </div>
+            <div id="form-alert"></div>
+          </form>
+        </div>
+      </div>
+
+      <div class="map-wrap mt-5">
+        <iframe src="https://maps.google.com/maps?q=BOK%20Coffee%20%26%20Eatery%20Manado&z=15&output=embed" loading="lazy" title="Peta lokasi BOK Coffee"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-5">
+          <h5 class="serif text-white d-flex align-items-center gap-2"><img src="img/logo.jpg" alt="Logo BOK" class="logo"> BOK Coffee &amp; Eatery</h5>
+          <p class="mb-0">Kopi, minuman segar, dan camilan. Tempat nongkrong santai di Manado.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <p class="text-white mb-2">Jam buka</p>
+          <p class="mb-0">Senin &ndash; Sabtu 10.00&ndash;22.00<br>Minggu 15.00&ndash;22.00</p>
+        </div>
+        <div class="col-6 col-md-4">
+          <p class="text-white mb-2">Ikuti kami</p>
+          <p class="mb-0"><a href="https://www.instagram.com/bokcoffee.n.eatery/" target="_blank" rel="noopener">Instagram @bokcoffee.n.eatery</a><br>Jln. Ring Road GPI, Manado</p>
+        </div>
+      </div>
+      <hr>
+      <p class="mb-0 small">&copy; <span class="tahun">2026</span> BOK Coffee &amp; Eatery. Foto dari Instagram @bokcoffee.n.eatery.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

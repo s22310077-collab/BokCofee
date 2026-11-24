@@ -1,0 +1,231 @@
+/* BOK Coffee & Eatery - style */
+:root {
+  --cream: #f6f1ea;
+  --paper: #fffdf9;
+  --brown: #2b211b;
+  --brown-soft: #5a4a3f;
+  --accent: #a8622a;
+  --line: #e4dbcf;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: var(--cream);
+  color: var(--brown);
+  line-height: 1.65;
+}
+
+h1, h2, h3, .serif {
+  font-family: "Lora", Georgia, serif;
+  font-weight: 600;
+}
+
+a { color: var(--accent); }
+a:hover { color: var(--brown); }
+
+/* navbar */
+.navbar {
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+}
+.navbar-brand {
+  font-family: "Lora", Georgia, serif;
+  font-weight: 700;
+  letter-spacing: .5px;
+  color: var(--brown) !important;
+}
+.navbar-brand small {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: .75rem;
+  color: var(--brown-soft);
+}
+.navbar .nav-link {
+  color: var(--brown-soft);
+  font-size: .95rem;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--brown);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+/* tombol */
+.btn-bok {
+  background: var(--brown);
+  color: #fff;
+  border-radius: 2px;
+  padding: .55rem 1.3rem;
+}
+.btn-bok:hover { background: var(--accent); color: #fff; }
+.btn-outline-bok {
+  border: 1px solid var(--brown);
+  color: var(--brown);
+  border-radius: 2px;
+  padding: .55rem 1.3rem;
+}
+.btn-outline-bok:hover { background: var(--brown); color: #fff; }
+
+/* hero */
+.hero {
+  min-height: 78vh;
+  background: #3a2c22 url("../img/outdoor-malam.jpg") center 60%/cover no-repeat;
+  position: relative;
+  color: #fff;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 14, 10, .55);
+}
+.hero .container { position: relative; }
+.hero h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); }
+
+.page-head {
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+  padding: 3.5rem 0 2.5rem;
+}
+.page-head p { color: var(--brown-soft); max-width: 560px; }
+
+section { padding: 4rem 0; }
+.bg-paper { background: var(--paper); }
+.text-soft { color: var(--brown-soft); }
+.label {
+  font-size: .78rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--accent);
+}
+
+/* foto */
+.photo {
+  width: 100%;
+  object-fit: cover;
+  background: #cbb9a6;
+  border-radius: 2px;
+}
+.photo-tall { height: 420px; }
+.photo-mid { height: 260px; }
+
+/* menu */
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .9rem 0;
+  border-bottom: 1px dashed var(--line);
+}
+.menu-item h3 { font-size: 1.05rem; margin: 0; }
+.menu-item p { margin: 0; font-size: .88rem; color: var(--brown-soft); }
+.menu-item .price { white-space: nowrap; font-weight: 600; }
+.filter-btn {
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--brown-soft);
+  padding: .35rem 1rem;
+  border-radius: 2px;
+  font-size: .9rem;
+}
+.filter-btn.active { background: var(--brown); color: #fff; border-color: var(--brown); }
+
+/* kartu sederhana */
+.simple-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  padding: 1.5rem;
+  height: 100%;
+}
+
+/* galeri */
+.gallery img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  background: #cbb9a6;
+  cursor: pointer;
+  transition: opacity .2s;
+}
+.gallery img:hover { opacity: .85; }
+
+/* status buka */
+.status-dot {
+  display: inline-block;
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  margin-right: 6px;
+  background: #999;
+}
+.status-dot.open { background: #4a8c4a; }
+.status-dot.closed { background: #b84a3a; }
+
+/* jam */
+.hours td { padding: .4rem 0; }
+.hours td:last-child { text-align: right; }
+.hours tr.today { font-weight: 600; }
+
+/* form */
+.form-control, .form-select {
+  border-radius: 2px;
+  border-color: var(--line);
+  background: var(--paper);
+}
+.form-control:focus, .form-select:focus {
+  border-color: var(--accent);
+  box-shadow: none;
+}
+
+.map-wrap iframe {
+  width: 100%;
+  height: 320px;
+  border: 1px solid var(--line);
+}
+
+footer {
+  background: var(--brown);
+  color: #d8cbbd;
+  padding: 2.5rem 0 1.5rem;
+  font-size: .9rem;
+}
+footer a { color: #fff; text-decoration: none; }
+footer a:hover { text-decoration: underline; color: #fff; }
+footer hr { border-color: #4a3b31; }
+
+/* logo */
+.navbar .logo { height: 36px; width: 36px; object-fit: cover; border-radius: 6px; }
+footer .logo { height: 40px; width: 40px; object-fit: cover; border-radius: 6px; }
+
+/* foto menu */
+.photo-menu { height: 320px; object-fit: cover; object-position: center; }
+.photo-wide { height: 380px; }
+
+.card-menu {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  height: 100%;
+}
+.card-menu img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: #e9e3da;
+}
+.card-menu h3 { font-size: 1rem; margin-bottom: .35rem; }
+.card-menu p { font-size: .87rem; color: var(--brown-soft); margin: 0; }
+.badge-fav {
+  font-family: "Inter", sans-serif;
+  font-size: .68rem;
+  font-weight: 500;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 0 .35rem;
+  margin-left: .2rem;
+  vertical-align: middle;
+}
+@media (max-width: 575px) {
+  .photo-tall { height: 320px; }
+  .photo-wide { height: 220px; }
+  .gallery img { height: 160px; }
+}

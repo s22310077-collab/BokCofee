@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beranda | BOK Coffee &amp; Eatery Manado</title>
+  <link rel="icon" href="img/logo.jpg">
+  <meta name="description" content="BOK Coffee & Eatery, kedai kopi dan tempat nongkrong di Jln. Ring Road GPI, Manado.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html"><img src="img/logo.jpg" alt="Logo BOK Coffee &amp; Eatery" class="logo"> BOK <small>Coffee &amp; Eatery</small></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Buka menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto gap-lg-3">
+          <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero d-flex align-items-center">
+    <div class="container py-5">
+      <p class="label text-white-50 mb-3">Manado, Sulawesi Utara</p>
+      <h1 class="mb-3">Ngopi dulu,<br>baru cerita.</h1>
+      <p class="lead col-lg-6 mb-4">BOK Coffee &amp; Eatery, tempat nongkrong di Ring Road GPI Manado. Ada kopi, minuman segar, dan camilan untuk teman ngobrol sampai malam.</p>
+      <a href="menu.html" class="btn btn-light rounded-0 px-4 me-2">Lihat menu</a>
+      <a href="kontak.html" class="btn btn-outline-light rounded-0 px-4">Lokasi</a>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center g-4 g-lg-5">
+        <div class="col-lg-6">
+          <img class="photo photo-tall" src="img/kedai-malam.jpg" alt="Tampak BOK Coffee &amp; Eatery di malam hari">
+        </div>
+        <div class="col-lg-6">
+          <p class="label">Tentang kami</p>
+          <h2 class="mb-3">Belum pernah ke BOK?</h2>
+          <p class="text-soft">Kamu ketinggalan banyak hal. Dari kopi sampai mojito yang segar, dari makanan berat sampai camilan ringan, semuanya ada di sini.</p>
+          <p class="text-soft">Area duduknya luas, indoor dan outdoor. Siang enak buat ngopi, malam lebih seru buat nongkrong bareng teman.</p>
+          <a href="tentang.html" class="btn btn-outline-bok mt-2">Baca selengkapnya</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-paper">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end mb-4 flex-wrap gap-2">
+        <div>
+          <p class="label mb-1">Favorit</p>
+          <h2 class="mb-0">Yang sering dipesan</h2>
+        </div>
+        <a href="menu.html">Menu lengkap &rarr;</a>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <img class="photo photo-menu mb-3" src="img/menu-bok-coffee.jpg" alt="BOK Coffee">
+          <h3 class="h5 mb-1">BOK Coffee</h3>
+          <p class="text-soft mb-0">Rasa kopi yang creamy dan nutty.</p>
+        </div>
+        <div class="col-md-4">
+          <img class="photo photo-menu mb-3" src="img/menu-pandan-latte.jpg" alt="Coffee Pandan Latte">
+          <h3 class="h5 mb-1">Coffee Pandan Latte</h3>
+          <p class="text-soft mb-0">Rasa kopi yang manis, creamy, dan wangi.</p>
+        </div>
+        <div class="col-md-4">
+          <img class="photo photo-menu mb-3" src="img/menu-strawberry-mojito.jpg" alt="Strawberry Mojito">
+          <h3 class="h5 mb-1">Strawberry Mojito</h3>
+          <p class="text-soft mb-0">Rasa strawberry yang segar dan asam dengan sensasi mint yang menyejukkan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="simple-card">
+            <p class="label mb-2">Jam buka</p>
+            <p id="status-buka" class="mb-3">Memuat status...</p>
+            <p class="mb-0 text-soft">Senin &ndash; Sabtu: 10.00 &ndash; 22.00<br>Minggu: 15.00 &ndash; 22.00</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="simple-card">
+            <p class="label mb-2">Lokasi</p>
+            <p class="mb-3">Jln. Ring Road GPI, Manado</p>
+            <a href="kontak.html" class="btn btn-bok">Petunjuk arah</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-5">
+          <h5 class="serif text-white d-flex align-items-center gap-2"><img src="img/logo.jpg" alt="Logo BOK" class="logo"> BOK Coffee &amp; Eatery</h5>
+          <p class="mb-0">Kopi, minuman segar, dan camilan. Tempat nongkrong santai di Manado.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <p class="text-white mb-2">Jam buka</p>
+          <p class="mb-0">Senin &ndash; Sabtu 10.00&ndash;22.00<br>Minggu 15.00&ndash;22.00</p>
+        </div>
+        <div class="col-6 col-md-4">
+          <p class="text-white mb-2">Ikuti kami</p>
+          <p class="mb-0"><a href="https://www.instagram.com/bokcoffee.n.eatery/" target="_blank" rel="noopener">Instagram @bokcoffee.n.eatery</a><br>Jln. Ring Road GPI, Manado</p>
+        </div>
+      </div>
+      <hr>
+      <p class="mb-0 small">&copy; <span class="tahun">2026</span> BOK Coffee &amp; Eatery. Foto dari Instagram @bokcoffee.n.eatery.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
